@@ -1,284 +1,424 @@
-<!DOCTYPE html>
-<html lang="en" style="color-scheme: light; --liff-base-background-color:#FFFFFF; --liff-base-text-color:#000000; --liff-base-background-rgb-color:255, 255, 255; --liff-base-text-rgb-color:0, 0, 0; --liff-light-button-border-color:rgba(0, 0, 0, 0.15); --liff-title-text-color:#111111; --liff-title-background-color:#FFFFFF; --liff-title-button-color:#111111; --liff-icon-color:#111111; --liff-status-bar-color:black; --liff-title-subtext-color:#B7B7B7; --liff-progress-bar-color:#06C755; --liff-progress-background-color:#FFFFFF; --liff-title-button-area-background-color:rgba(255, 255, 255, 0.12); --liff-title-button-area-border-color:rgba(0, 0, 0, 0.15);"><head>
+<!doctype html>
+<html lang="en">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>โปรโมชั่น</title>
+  </head>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>เเจกทุนฟรี 100 !!!</title>
-  <meta property="og:locale" content="th_TH">
-  <meta property="og:type" content="game mobile">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css?s=21224223" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css?s=23213423" rel="stylesheet" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&amp;display=swap" rel="stylesheet">
-</head>
-
-
-
-<body class="d-flex h-100 text-center" style="height:100vh !important;
-        background-image: url('https://img5.pic.in.th/file/secure-sv1/Ga4VOJta4AATAhU.png');
-        /* background: linear-gradient(to bottom,#51010a 40%,#55000a 80%); */
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<body class="d-flex h-100" style="height:100vh !important;
+        background-image: url('https://img5.pic.in.th/file/secure-sv1/WoHOG1.png');
+        /* background: linear-gradient(to bottom,#51010a 60%,#55000a 80%); */
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
         color: #fff;">
-  <div class="container d-flex mx-auto align-items-center justify-content-center">
-    <main class="card-columns mx-auto d-flex justify-content-center col-12 col-sm-6">
-      <div class="card" style="background: rgb(0 0 0 / 60%);margin-top: 0px;border: 0px;border-radius: 15px;">
-        <div class="card-body p-3 p-sm-4">
-          <!--img src="https://img5.pic.in.th/file/secure-sv1/Ga4VOJta4AATAhU.png" class="img-fluid" style="width: 50%;"-->
-          <!--ส่วนรูปโปรโมชั่น และ ลิ้งออกจากรูปภาพ-->
-          <img src="https://img5.pic.in.th/file/secure-sv1/Ga4VOJta4AATAhU.png" class="img-fluid" style="width: 450px;border-radius: 15px;">
-          
-          <p class="lead mb-4 mt-3" style="font-family: 'Kanit', sans-serif;font-size: 28px;font-weight: 500;">กดรับได้เลย </p>
-          <div class="d-grid gap-2 col-10 mx-auto">
-            <button class="btn btn-primary btn-lg text-nowrap mb-2" id="btnShare" onclick="sendShare()" style="font-family: 'Kanit', sans-serif;">เเชร์เลย</button>
-          </div>
-        </div>
-      </div>
-    </main>
-  </div>
-
-
-
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js?s=224243"></script>
-
-  <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js?s=224323"></script>
-  <script>
-    async function sendShare() {
-      const result = await liff.shareTargetPicker([{
-        "type": "flex",
-        "altText": "แจกทุนฟรี100บาทถอนได้จริง",
-    "type": "flex",
-    "contents": {
-  "type": "bubble",
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://img5.pic.in.th/file/secure-sv1/Ga4VOJta4AATAhU.png",
-            "size": "full"
-          }
-        ],
-        "borderColor": "#160f0e",
-        "backgroundColor": "#38201e",
-        "background": {
-          "type": "linearGradient",
-          "angle": "0deg",
-          "startColor": "#ffffff",
-          "endColor": "#ffffff"
-        },
-        "borderWidth": "1px",
-        "cornerRadius": "9px"
-      },
-      {
-        "type": "text",
-        "text": "BIG BONUS !!",
-        "weight": "bold",
-        "size": "xl",
-        "style": "italic",
-        "align": "center",
-        "color": "#ffffff"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "margin": "lg",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "🌟สมัครสมาชิกรับโบนัส 200%🌟",
-                "wrap": true,
-                "color": "#000000",
-                "size": "md",
-                "margin": "xxl",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "https://slotautogames.com/"
-                }
-              }
-            ],
-            "action": {
-              "type": "uri",
-              "label": "action",
-              "uri": "https://slotautogames.com/"
-            },
-            "borderColor": "#CC9900",
-            "backgroundColor": "#FFFAFA",
-            "cornerRadius": "md",
-            "paddingAll": "sm"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "สุกี้อร่อยเลย!! จริงๆนะ",
-                "weight": "bold",
-                "align": "center",
-                "color": "#ffffff"
-              }
-            ]
-          }
-        ],
+    
+    <script>
+    window.onload = function(e){
+      liff.init({liffId: "2006509241-lRYMEVdb"}, function(){
+        liff.ready.then(() =>{
+          if(liff.isLoggedIn()){
+             var dd = getParameterByName("UB")
+            
+    
+    if(dd === "Pro"){
+      var ee = getParameterByName("flex")
+      var aa = [
+         {
+  "type": "flex",
+  "altText": "โปรโมชั่น",
+  "contents": {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/c73ffc1cd155396d621e9df41967c5f9.png",
+        "size": "full",
+        "aspectRatio": "1:1",
         "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://slotautogames.com/"
+          "type": "message",
+          "text": "รับคูปองเครดิตฟรี 50"
         }
       },
-      {
+      "body": {
         "type": "box",
-        "layout": "horizontal",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "➡️แจกทุนฟรี 50.-⬅️",
+            "size": "xl",
+            "weight": "bold",
+            "align": "center",
+            "color": "#FFCC00",
+            "action": {
+              "type": "message",
+              "text": "รับคูปองเครดิตฟรี 50"
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ รับเครดิตฟรี ได้ทุกท่าน!!",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          },
+          {
+            "type": "text",
+            "text": "✅ ถอนได้สูงสุด 100 บาท",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          }
+        ],
+        "backgroundColor": "#000066"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "text": "รับคูปองเครดิตฟรี 50",
+              "label": "รับเครดิตฟรี 50 คูปอง"
+            },
+            "style": "primary",
+            "height": "sm"
+          }
+        ],
+        "backgroundColor": "#000066"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/dd1d24b9fb4541257441cfaf1319335d.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "action": {
+          "type": "uri",
+          "uri": "https://bit.ly/ubett1688"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "➡️รับโบนัส 100%⬅️",
+            "size": "xl",
+            "weight": "bold",
+            "align": "center",
+            "color": "#FFCC00",
+            "action": {
+              "type": "uri",
+              "uri": "https://bit.ly/ubett1688"
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ ขั้นต่ำ 50 บาททำยอด 10 เท่า!!",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          },
+          {
+            "type": "text",
+            "text": "✅ ถอนได้สูงสุด 100,000 บาทต่อบิล",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          }
+        ],
+        "backgroundColor": "#000066"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
         "contents": [
           {
             "type": "button",
             "action": {
               "type": "uri",
-              "label": "สมัครสมาชิก",
-              "uri": "https://ais168.com/"
+              "label": "รับโบนัส 100%",
+              "uri": "https://bit.ly/ubett1688"
             },
-            "color": "#a81b10",
-            "height": "sm",
             "style": "primary",
-            "margin": "md"
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "button",
-                "action": {
-                  "type": "uri",
-                  "label": "เข้าสู่ระบบ",
-                  "uri": "https://lin.ee/c4fIJE5p"
-                },
-                "color": "#a81b10",
-                "style": "primary",
-                "margin": "sm",
-                "height": "sm"
-              }
-            ],
-            "offsetTop": "none"
+            "height": "sm"
           }
         ],
-        "margin": "md"
+        "backgroundColor": "#000066"
       }
-    ],
-    "backgroundColor": "#550801",
-    "borderWidth": "6px",
-    "borderColor": "#421d1a",
-    "cornerRadius": "15px",
-    "background": {
-      "type": "linearGradient",
-      "angle": "0deg",
-      "startColor": "#000000",
-      "endColor": "#62150f"
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/4a9c4045708c44297a36dc93ac842ce2.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "action": {
+          "type": "uri",
+          "uri": "https://bit.ly/ubett1688"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "➡️รับโบนัส 88%⬅️",
+            "size": "xl",
+            "weight": "bold",
+            "align": "center",
+            "color": "#FFCC00",
+            "action": {
+              "type": "uri",
+              "uri": "https://bit.ly/ubett1688"
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ ขั้นต่ำ 50 บาททำยอด 20 เท่า!!",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          },
+          {
+            "type": "text",
+            "text": "✅ ถอนได้สูงสุด 200,000 บาทต่อบิล",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          }
+        ],
+        "backgroundColor": "#000066"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "รับโบนัส 88%",
+              "uri": "https://bit.ly/ubett1688"
+            },
+            "style": "primary",
+            "height": "sm"
+          }
+        ],
+        "backgroundColor": "#000066"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/33cd0a29b14a6a1d49ca051166e60348.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "action": {
+          "type": "uri",
+          "uri": "https://bit.ly/ubett1688"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "➡️โบนัสนาทีทอง 40%⬅️",
+            "size": "xl",
+            "weight": "bold",
+            "align": "center",
+            "color": "#FFCC00",
+            "action": {
+              "type": "uri",
+              "uri": "https://bit.ly/ubett1688"
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ ขั้นต่ำ 50 บาททำยอด 4 เท่า!!",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          },
+          {
+            "type": "text",
+            "text": "✅ ถอนได้สูงสุด 100,000 บาทต่อบิล",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          }
+        ],
+        "backgroundColor": "#000066"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "รับโบนัส 40%",
+              "uri": "https://bit.ly/ubett1688"
+            },
+            "style": "primary",
+            "height": "sm"
+          }
+        ],
+        "backgroundColor": "#000066"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://www.img.in.th/images/72044389d88c7d9b1895f93e0a8a8db7.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "action": {
+          "type": "uri",
+          "uri": "https://bit.ly/ubett1688"
+        }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "➡️คืนยอดเสียแรก 50%⬅️",
+            "size": "xl",
+            "weight": "bold",
+            "align": "center",
+            "color": "#FFCC00",
+            "action": {
+              "type": "uri",
+              "uri": "https://bit.ly/ubett1688"
+            }
+          },
+          {
+            "type": "text",
+            "text": "✅ ขั้นต่ำ 50 บาททำยอด 10 เท่า!!",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          },
+          {
+            "type": "text",
+            "text": "✅ ถอนได้สูงสุด 100,000 บาทต่อบิล",
+            "weight": "bold",
+            "align": "start",
+            "color": "#FFFAFA",
+            "offsetTop": "md"
+          }
+        ],
+        "backgroundColor": "#000066"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "รับโบนัสคืนยอดเสีย",
+              "uri": "https://bit.ly/ubett1688"
+            },
+            "style": "primary",
+            "height": "sm"
+          }
+        ],
+        "backgroundColor": "#000066"
+      }
     }
-  }
+  ]
 }
-      }])
-      if (result) {
-        liff.closeWindow()
-      } else {
-        const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
-
-        if (minorVer === undefined) {
-          alert('มีการกดออกจากการแชร์')
-          return
+        
         }
-
-        if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
-          alert('มีการกดออกจากการแชร์')
-        }
-      }
+           ]
+  
+      sendflex(aa)
     }
-
-    function logOut() {
-      liff.logout()
-      window.location.reload()
-    }
-    async function main() {
-      await liff.init({
-        liffId: "2006509241-lRYMEVdb"
+          
+   
+            
+          } else {
+            liff.login()
+            
+          }
+          
+          
+        })
+        
       })
-      if (!liff.isLoggedIn()) {
-        liff.login()
+      
+      function sendflex(flex){
+        liff.sendMessages(flex).then(function(){
+          liff.closeWindow()
+          
+        })
+        
       }
-    }
-   main()
-  </script><script src="https://static.line-scdn.net/liff/edge/2/non-ios-extensions.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    // <![CDATA[
-    /* No Right Click */
-    var message = "ไม่อนุญาติให้คลิกขวาค่ะ!!!!";
-
-    function clickIE4() {
-      if (event.button == 2) {
-        alert(message);
-        return false;
+      
+      function shareflex(share){
+        liff.shareTargetPicker(share).then(function(){
+         
+        
+        })
       }
-    }
-
-    function clickNS4(e) {
-      if (document.layers || document.getElementById && !document.all) {
-        if (e.which == 2 || e.which == 3) {
-          alert(message);
-          return false;
-        }
+       function shareflexend(share){
+        liff.shareTargetPicker(share).then(function(){
+         liff.closeWindow()
+        
+        })
       }
+            function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
     }
-    if (document.layers) {
-      document.captureEvents(Event.MOUSEDOWN);
-      document.onmousedown = clickNS4;
-    } else if (document.all && !document.getElementById) {
-      document.onmousedown = clickIE4;
     }
-    document.oncontextmenu = new Function("alert(message);return false");
-    /* End No Right Click */
+    </script>
+    
+    
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    /* No Highlighting */
-    var omitformtags = ["input", "textarea", "select"];
-    omitformtags = omitformtags.join("|");
-
-    function disableselect(e) {
-      if (omitformtags.indexOf(e.target.tagName.toLowerCase()) == -1)
-        return false
-    }
-
-    function reEnable() {
-      return true
-    }
-    if (typeof document.onselectstart != "undefined") {
-      document.onselectstart = new Function("return false")
-    } else {
-      document.onmousedown = disableselect;
-      document.onmouseup = reEnable;
-    }
-    /* End  No Highlighting */
-    // ]]>
-  </script>
-
-
-
-
-</body></html>
+  </body>
+</html>
